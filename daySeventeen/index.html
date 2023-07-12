@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numero par ou impar</title>
+    <title>Máximo e mínimo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         #container-data, #result {
-            width: 30%;
             margin-top: 30px;
             margin-left: 30px;
+        }
+        
+        #result {
+            width: 100%;
+        }
+
+        #container-data {
+            width: 30%;
         }
 
         #container-data input, #container-data button {
@@ -19,8 +26,9 @@
 </head>
 <body>
     <div id="container-data">
-        <input placeholder="Informe um numero" min="0" id="number" type="number" class="form-control">
-        <button class="btn btn-primary" onclick="checkNumber()">Verificar se é par ou impar</button>
+        <input placeholder="Informe o número 1" min="0" id="number1" type="number" class="form-control">
+        <input placeholder="Informe o número 2" min="0" id="number2" type="number" class="form-control">
+        <button class="btn btn-primary" onclick="showMaxMin()">Informar valor máximo e mínimo</button>
     </div>
     <div id="result"></div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
