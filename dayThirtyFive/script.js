@@ -1,5 +1,4 @@
 let listItems = new Array();
-let filteredList = new Array();
 let containerList = document.querySelector("#items");
 
 window.onload = () => {
