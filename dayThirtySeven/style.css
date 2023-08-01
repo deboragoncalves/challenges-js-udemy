@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 30%;
+}
+
+div, button {
+    margin: 10px;
+}
+
+div {
+    display: none;
+}
+
+.active {
+    display: block;
+}
