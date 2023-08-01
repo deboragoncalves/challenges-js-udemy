@@ -47,8 +47,10 @@ const createModal = () => {
     bodyHtml.appendChild(containerModal);
 }
 
-window.onclick = function (event) {
+window.onclick = (event) => {
     let modal = document.querySelector("#modal");
+
+    if (!modal) return;
     
     if (event.target == modal) {
         modal.style.display = "none";
