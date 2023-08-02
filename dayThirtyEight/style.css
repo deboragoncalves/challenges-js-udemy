@@ -1,0 +1,23 @@
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.modal {
+    display: none; 
+    z-index: 1; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    width: 50%;
+    border: none;
+}
+
+.close {
+    cursor: pointer;
+}
