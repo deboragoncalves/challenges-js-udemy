@@ -47,25 +47,22 @@ const compareProducts = (product1, product2) => {
     let nameProduct1 = product1.name;
     let nameProduct2 = product2.name;
     
-    let bestProduct = "";
     let finalSentence = "";
     
     if (gradeProduct1 > gradeProduct2) {
-        bestProduct = nameProduct1;
+        finalSentence = `O produto ${nameProduct1} é melhor.`;
     } else if (gradeProduct2 > gradeProduct1) {
-        bestProduct = nameProduct2;
+        finalSentence = `O produto ${nameProduct2} é melhor.`;
     } else if (gradeProduct2 == gradeProduct1) {
         if (priceProduct1 > priceProduct2) {
-            bestProduct = nameProduct2;
+            finalSentence = `O produto ${nameProduct2} é melhor.`;
         } else if (priceProduct2 > priceProduct1) {
-            bestProduct = nameProduct1;
+            finalSentence = `O produto ${nameProduct1} é melhor.`;
         } else if (priceProduct2 == priceProduct1) {
             finalSentence = "Os produtos são equivalentes.";
-            return finalSentence;
         }
     }
     
-    finalSentence = `O produto ${bestProduct} é melhor.`;
     let containerResult = document.querySelector("#result");
     containerResult.innerHTML = `Produto: ${nameProduct1}, Preço: ${priceProduct1}, Avaliação: ${gradeProduct1}`;    
     containerResult.innerHTML += "<br />";
